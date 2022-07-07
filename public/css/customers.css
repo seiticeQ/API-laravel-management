@@ -1,0 +1,57 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+    color: black;
+    font-family: sans-serif;
+}
+
+.customers-view{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.customers-view button{
+    grid-row: 1;
+    grid-column: 7;
+    justify-self: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    width: 100px;
+    height: 30px;
+}
+
+.customers-view button:hover{
+    border: 1px solid silver;
+    background-color: silver;
+    cursor: pointer;
+}
+
+#back-button a{
+    color: black;
+    text-decoration: none;
+}
+
+.customer-name{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.customer-email{
+    grid-column: 4;
+    grid-row: 3;
+}
+
+.customer-address{
+    grid-column: 4;
+    grid-row: 4;
+}
+
+.customer-group{
+    grid-column: 4;
+    grid-row: 5;
+}
